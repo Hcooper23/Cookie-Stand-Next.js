@@ -1,0 +1,42 @@
+.main {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .store-locations {
+    margin-top: 20px;
+  }
+  
+  .seattle-location {
+    font-weight: bold;
+  }
+  
+  .tokyo-location {
+    font-weight: bold;
+  }
+  
+  .dubai-location {
+    font-weight: bold;
+  }
+  
+  .paris-location {
+    font-weight: bold;
+  }
+  
+  .lima-location {
+    font-weight: bold;
+  }
+  
+  .salmon-image {
+    display: block;
+    max-width: 100%;
+  }
+  
+  
+  .footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+  }
+  
