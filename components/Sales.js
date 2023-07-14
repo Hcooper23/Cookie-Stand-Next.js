@@ -72,9 +72,9 @@ export default function Sales() {
           ))}
         </tbody>
       </table>
-      <img className={styles.salmoncookie} src="/images/frosted-cookie.jpeg" alt="Frosted Cookie Samples" />
-      <img className={styles.cookiecutter} src="/images/cutter.jpeg" alt="Salmon Cutter" />
-      <img className={styles.schoolfish} src="/images/fish.jpeg" alt="School Of Fish" />
+      <img className={styles.salmoncookie} src="../images/frosted-cookie (Lab08B).jpeg" alt="Frosted Cookie Samples" />
+      <img className={styles.cookiecutter} src="../images/cutter (Lab08B).jpeg" alt="Salmon Cutter" />
+      <img className={styles.schoolfish} src="../images/fish (Lab08B).jpeg" alt="School Of Fish" />
     </main>
   );
 }
