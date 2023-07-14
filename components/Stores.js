@@ -22,6 +22,7 @@ export default function Stores() {
           Lima - MAL DE LA RESERVA 610 INT 149 MIRAFLORE Lima, Peru
         </p>
       </section>
+  
       <img src="../images/salmon (Lab08B).png" alt="Salmon Image" />
     </main>
   );
