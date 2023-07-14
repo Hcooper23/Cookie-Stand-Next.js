@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from '../styles/salestyle.module.css';
+import salesData from '@/utils/salesData';
 
 export default function Sales() {
   const [salesData, setSalesData] = useState([]);
