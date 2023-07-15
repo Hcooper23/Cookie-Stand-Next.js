@@ -1,25 +1,21 @@
 const salesData = [
   {
-    location: 'Seattle',
-    sales: [
-      { hour: '6am', cookies: 16 },
-      { hour: '7am', cookies: 20 },
-      { hour: '8am', cookies: 35 },
-      // ...add more hourly sales data
-    ],
-    total: 875,
+    city: 'Seattle',
+    avgPurchase: 6.3,
+    minHourly: 23,
+    maxHourly: 65,
+
   },
   {
-    location: 'Tokyo',
-    sales: [
-      { hour: '6am', cookies: 10 },
-      { hour: '7am', cookies: 14 },
-      { hour: '8am', cookies: 20 },
-      // ...add more hourly sales data
-    ],
-    total: 523,
+    city: 'Tokyo',
+    avgPurchase: 1.2,
+    minHourly: 3,
+    maxHourly: 24,
+
   },
   // ...add more location sales data
 ];
 
 export default salesData;
+
+

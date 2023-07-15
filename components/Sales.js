@@ -1,16 +1,20 @@
+'use client';
+
 import { useState } from 'react';
 import styles from '../styles/salestyle.module.css';
-import salesData from '@/utils/salesData';
+import data from '@/utils/salesData';
 
 export default function Sales() {
-  const [salesData, setSalesData] = useState([]);
+  const [salesData, setSalesData] = useState(data);
+  // const [name, setName ] = useState('');
+  // const [aver]
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const city = event.target.city.value;
-    const avgPurchase = event.target.avgPurchase.value;
-    const minHourly = event.target.minHourly.value;
-    const maxHourly = event.target.maxHourly.value;
+    const avgPurchase = +event.target.avgPurchase.value;
+    const minHourly = +event.target.minHourly.value;
+    const maxHourly = +event.target.maxHourly.value;
 
     const newLocation = {
       city,
@@ -19,7 +23,7 @@ export default function Sales() {
       maxHourly,
     };
 
-    setSalesData((prevSalesData) => [...prevSalesData, newLocation]);
+    setSalesData([...data, newLocation]);
 
     event.target.reset();
   };
