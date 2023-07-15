@@ -1,13 +1,14 @@
-'use client';
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/salestyle.module.css';
-import data from '@/utils/salesData';
+import initialSalesData from '../utils/salesData';
 
 export default function Sales() {
-  const [salesData, setSalesData] = useState(data);
-  // const [name, setName ] = useState('');
-  // const [aver]
+  const [salesData, setSalesData] = useState([]);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,7 +24,7 @@ export default function Sales() {
       maxHourly,
     };
 
-    setSalesData([...data, newLocation]);
+    setSalesData([...salesData, newLocation]);
 
     event.target.reset();
   };
@@ -40,6 +41,10 @@ export default function Sales() {
   const calculateTotalCookies = (cookiesPerHour) => {
     return cookiesPerHour.reduce((acc, curr) => acc + curr, 0);
   };
+
+  useEffect(() => {
+    setSalesData(initialSalesData);
+  }, []);
 
   return (
     <main className={styles.main}>
@@ -77,9 +82,13 @@ export default function Sales() {
           ))}
         </tbody>
       </table>
-      <img className={styles.salmoncookie} src="../images/frosted-cookie (Lab08B).jpeg" alt="Frosted Cookie Samples" />
-      <img className={styles.cookiecutter} src="../images/cutter (Lab08B).jpeg" alt="Salmon Cutter" />
-      <img className={styles.schoolfish} src="../images/fish (Lab08B).jpeg" alt="School Of Fish" />
+      {isClient && (
+        <>
+          <img className={styles.salmoncookie} src="../images/frosted-cookie (Lab08B).jpeg" alt="Frosted Cookie Samples" />
+          <img className={styles.cookiecutter} src="../images/cutter (Lab08B).jpeg" alt="Salmon Cutter" />
+          <img className={styles.schoolfish} src="../images/fish (Lab08B).jpeg" alt="School Of Fish" />
+        </>
+      )}
     </main>
   );
 }
