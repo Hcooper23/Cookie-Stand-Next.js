@@ -43,10 +43,15 @@ Use this [REPORT TEMPLATE](https://canvas.instructure.com/courses/6745216/assign
 
 ### Advantages (Pros)
 
-- Item 1
-- Item 2
+-  Overall compared to the other frameworks Nextjs felt the easiest to get started with. We tried using Vue but immediately had issues with even intalling it to our machine. Using Next.js the docs were easier to interpret. I think being able to jump right in a get started is a huge advantage of any framework. This speaks to the quality of Nextjs docs.
+
+- Easy to bring in other React elements like hooks. If you have already been working with React Nextjs is very approachable with the structure it provides.
 
 ### Troubleshooting (Cons)
+
+- Unique bugs that can be difficult to interpret like the hydration error we faced when trying to launch our code. The program was functioning correctly so it was difficult to understand the cause behind the error we were getting.
+
+- Although it is easy to get started advancing from there can be quite difficult. It's seemed difficult at times to truly gauge if we were getting the most out of Nextjs's benefits.
 
 ##### Problem
 
